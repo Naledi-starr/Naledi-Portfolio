@@ -1,0 +1,6 @@
+PORTFOLIO_PLAN.md
+README.md
+*.png
+node_modules/
+build/
+.DS_Store

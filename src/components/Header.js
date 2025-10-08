@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import SocialLinks from './SocialLinks';
 
 const HeaderContainer = styled.header`
   background-color: #000;
@@ -33,22 +34,6 @@ const NavLink = styled(Link)`
   }
 `;
 
-const SocialIcons = styled.div`
-  display: flex;
-  gap: 1rem;
-  margin-left: 1rem;
-`;
-
-const SocialIcon = styled.a`
-  color: #fff;
-  font-size: 1.2rem;
-  text-decoration: none;
-
-  &:hover {
-    color: #d4af37;
-  }
-`;
-
 const HireButton = styled.a`
   background-color: #d4af37;
   color: #000;
@@ -66,21 +51,16 @@ const HireButton = styled.a`
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>MyPortfolio</Logo>
+      <Logo>Naledi</Logo>
       <Nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
-        <NavLink to="/about">About Me</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </Nav>
-      <SocialIcons>
-        <SocialIcon href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐱</SocialIcon>
-        <SocialIcon href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗</SocialIcon>
-        <SocialIcon href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</SocialIcon>
-      </SocialIcons>
-      <HireButton href="#contact">Hire Me</HireButton>
+      <SocialLinks />
+      <HireButton href="/Naledi_Motswiane_Resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</HireButton>
     </HeaderContainer>
   );
 };

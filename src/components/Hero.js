@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import profileImage from './Profile.jpg';
+import SocialLinks from './SocialLinks';
 
 const HeroSection = styled.section`
   background-color: #f5f0e6; /* Light beige */
@@ -10,12 +12,13 @@ const HeroSection = styled.section`
 `;
 
 const ProfileImage = styled.img`
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
   object-fit: cover;
-  border: 4px solid #d4af37; /* Gold accent */
+  border: 2px solid #d4af37; /* Gold accent */
   margin-bottom: 1rem;
+  
 `;
 
 const Name = styled.h1`
@@ -35,23 +38,6 @@ const Description = styled.p`
   margin: 0 auto 2rem;
   font-size: 1.1rem;
   line-height: 1.5;
-`;
-
-const SocialIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-`;
-
-const SocialIcon = styled.a`
-  font-size: 1.8rem;
-  color: #000;
-  text-decoration: none;
-
-  &:hover {
-    color: #d4af37;
-  }
 `;
 
 const CTAButtons = styled.div`
@@ -98,34 +84,40 @@ const StatLabel = styled.div`
 `;
 
 const Hero = () => {
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <HeroSection>
-      <ProfileImage src="/1.png" alt="Profile" />
-      <Name>John Doe</Name>
-      <Title>Full Stack Developer</Title>
+      <ProfileImage src={profileImage} alt="Naledi Mankogele Motswiane" />
+      <Name>Naledi Mankogele Motswiane</Name>
+      <Title>Software Developer</Title>
       <Description>
-        Passionate developer with expertise in building elegant and performant web applications.
+        Dynamic Software Developer with expertise in programming, database management, web and mobile development, and IT project management. Skilled in leveraging AI tools and methodologies to create innovative, scalable technology solutions. Passionate about collaborative problem-solving and delivering impactful software solutions.
       </Description>
-      <SocialIcons>
-        <SocialIcon href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐱</SocialIcon>
-        <SocialIcon href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗</SocialIcon>
-        <SocialIcon href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</SocialIcon>
-      </SocialIcons>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+        <SocialLinks color="#000" size="1.8rem" gap="1.5rem" />
+      </div>
       <CTAButtons>
-        <Button href="#services">Explore Services</Button>
-        <Button href="#contact">Hire Me</Button>
+        <Button href="#services" onClick={(e) => handleScroll(e, 'services')}>Explore Services</Button>
+        <Button href="/Naledi_Motswiane_Resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</Button>
       </CTAButtons>
       <Stats>
         <Stat>
-          <StatNumber>5+</StatNumber>
+          <StatNumber> 1+</StatNumber>
           <StatLabel>Years Experience</StatLabel>
         </Stat>
         <Stat>
-          <StatNumber>20+</StatNumber>
+          <StatNumber>5+</StatNumber>
           <StatLabel>Projects</StatLabel>
         </Stat>
         <Stat>
-          <StatNumber>15+</StatNumber>
+          <StatNumber>0</StatNumber>
           <StatLabel>Happy Clients</StatLabel>
         </Stat>
       </Stats>

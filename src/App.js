@@ -15,7 +15,7 @@ import SoftSkills from './components/SoftSkills';
 import RelevantExperience from './components/RelevantExperience';
 import Education from './components/Education'; 
 import BackToTopButton from './components/BackToTopButton';
-import ProjectDetailPage from './pages/ProjectDetailPage';
+import ProjectDetailPage from './components/ProjectDetailPage';
 import Preloader from './components/Preloader';
 
 const Home = () => (

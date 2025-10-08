@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { projects } from './projects';
+import { projects } from '../data/projects';
 
 const PageContainer = styled.div`
   padding: 4rem 2rem;

@@ -19,6 +19,10 @@ const ProfileImage = styled.img`
   border: 2px solid #d4af37; /* Gold accent */
   margin-bottom: 1rem;
   
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const Name = styled.h1`
@@ -31,6 +35,10 @@ const Title = styled.h2`
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Description = styled.p`
@@ -65,6 +73,11 @@ const Stats = styled.div`
   justify-content: center;
   gap: 3rem;
   margin-top: 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 `;
 
 const Stat = styled.div`

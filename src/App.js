@@ -28,7 +28,6 @@ const Home = () => (
     <RelevantExperience />
     <Education />
     <CallToAction />
-    <BlogPage/>
   </>
 );
 

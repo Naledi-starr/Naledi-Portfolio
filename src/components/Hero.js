@@ -120,20 +120,6 @@ const Hero = () => {
         <Button href="#services" onClick={(e) => handleScroll(e, 'services')}>Explore Services</Button>
         <Button href="/Naledi_Motswiane_Resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</Button>
       </CTAButtons>
-      <Stats>
-        <Stat>
-          <StatNumber> 1+</StatNumber>
-          <StatLabel>Years Experience</StatLabel>
-        </Stat>
-        <Stat>
-          <StatNumber>5+</StatNumber>
-          <StatLabel>Projects</StatLabel>
-        </Stat>
-        <Stat>
-          <StatNumber>0</StatNumber>
-          <StatLabel>Happy Clients</StatLabel>
-        </Stat>
-      </Stats>
     </HeroSection>
   );
 };

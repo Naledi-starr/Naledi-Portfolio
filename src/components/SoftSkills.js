@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsSection = styled.section`
-  padding: 4rem 2rem;
-  background-color: #fff;
+  padding: 5rem 2rem;
   color: #000;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+`;
+
+const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
 `;
 
 const SectionTitle = styled.h2`
@@ -76,23 +79,25 @@ const skillsData = [
 ];
 return (
   <SkillsSection>
-    <SectionTitle>Soft Skills &amp; Achievements</SectionTitle>
-    <SkillsGrid>
-      {skillsData.map((skill, index) => (
-        <SkillCard key={index}>
-          <SkillTitle>{skill.title}</SkillTitle>
-          {Array.isArray(skill.description) ? (
-            <SkillList>
-              {skill.description.map((item, i) => (
-                <SkillListItem key={i}>{item}</SkillListItem>
-              ))}
-            </SkillList>
-          ) : (
-            <SkillDescription>{skill.description}</SkillDescription>
-          )}
-        </SkillCard>
-      ))}
-    </SkillsGrid>
+    <Container>
+      <SectionTitle>Soft Skills &amp; Achievements</SectionTitle>
+      <SkillsGrid>
+        {skillsData.map((skill, index) => (
+          <SkillCard key={index}>
+            <SkillTitle>{skill.title}</SkillTitle>
+            {Array.isArray(skill.description) ? (
+              <SkillList>
+                {skill.description.map((item, i) => (
+                  <SkillListItem key={i}>{item}</SkillListItem>
+                ))}
+              </SkillList>
+            ) : (
+              <SkillDescription>{skill.description}</SkillDescription>
+            )}
+          </SkillCard>
+        ))}
+      </SkillsGrid>
+    </Container>
   </SkillsSection>
 );
 };

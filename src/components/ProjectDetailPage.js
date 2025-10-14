@@ -108,8 +108,12 @@ const ProjectDetailPage = () => {
           {project.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
         </TagsContainer>
         <LinksContainer>
-          <ProjectLink href={project.liveUrl} target="_blank" rel="noopener noreferrer">View Live</ProjectLink>
-          <ProjectLink href={project.repoUrl} target="_blank" rel="noopener noreferrer">View Code</ProjectLink>
+          {project.liveUrl && project.liveUrl !== '#' && (
+            <ProjectLink href={project.liveUrl} target="_blank" rel="noopener noreferrer">View Live</ProjectLink>
+          )}
+          {project.repoUrl && project.repoUrl !== '#' && (
+            <ProjectLink href={project.repoUrl} target="_blank" rel="noopener noreferrer">View Code</ProjectLink>
+          )}
         </LinksContainer>
         <BackLink to="/portfolio">← Back to Portfolio</BackLink>
       </ProjectContent>
@@ -118,4 +122,3 @@ const ProjectDetailPage = () => {
 };
 
 export default ProjectDetailPage;
-

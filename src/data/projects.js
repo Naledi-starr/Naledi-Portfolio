@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 4, 
+    title: 'Personal Portfolio Website',
+    description: 'The responsive portfolio website you are currently viewing. Built with React and styled-components to showcase my projects and skills.',
+    image: '/screenshot.png',
+    tags: ['React', 'Styled-Components', 'React Router', 'UI/UX'],
+    liveUrl: 'https://naledi-portfolio.vercel.app/', 
+    repoUrl: 'https://github.com/Naledi-starr/Naledi-Portfolio', 
+  },
+  {
     id: 1,
     title: 'Advice Generator',
     description: 'Built a dynamic, responsive web app using HTML, CSS, and JavaScript, integrating the Advice Slip API to deliver real-time advice quotes. Designed a mobile-first UI with accessibility features and smooth animations.',
@@ -26,13 +35,4 @@ export const projects = [
     liveUrl: 'https://www.canva.com/design/DAGdO90KaZ4/a8X2_RjPZZ92rM22PKD_dg/view?utm_content=DAGdO90KaZ4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1d4fd2db19',
     repoUrl: '#',
   },
-  // {
-  //   id: 4,
-  //   title: 'Digital Career Blueprint',
-  //   description: "A comprehensive career guidance platform designed specifically for aspiring tech professionals in South Africa. This interactive web application helps users explore technology career paths, understand skill requirements, and discover opportunities in South Africa's growing tech industry.",
-  //   image: '/1.png',
-  //   tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'React Query', 'shadcn-ui'],
-  //   liveUrl: 'https://lovable.dev/projects/904f736c-ed55-49e3-91cc-de2ec6d535d6',
-  //   repoUrl: 'https://github.com/Naledi-starr/Digital-Career-Blueprint-?tab=readme-ov-file#deployment',
-  // }
-];
+ ];

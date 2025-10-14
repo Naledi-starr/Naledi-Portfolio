@@ -96,6 +96,12 @@ const StatLabel = styled.div`
   font-weight: 600;
 `;
 
+const SocialLinksWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+`;
+
 const Hero = () => {
   const handleScroll = (e, targetId) => {
     e.preventDefault();
@@ -113,9 +119,9 @@ const Hero = () => {
       <Description>
         Dynamic Software Developer with expertise in programming, database management, web and mobile development, and IT project management. Skilled in leveraging AI tools and methodologies to create innovative, scalable technology solutions. Passionate about collaborative problem-solving and delivering impactful software solutions.
       </Description>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+      <SocialLinksWrapper>
         <SocialLinks color="#000" size="1.8rem" gap="1.5rem" />
-      </div>
+      </SocialLinksWrapper>
       <CTAButtons>
         <Button href="#services" onClick={(e) => handleScroll(e, 'services')}>Explore Services</Button>
         <Button href="/Naledi_Motswiane_Resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</Button>

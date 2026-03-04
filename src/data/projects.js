@@ -35,4 +35,13 @@ export const projects = [
     liveUrl: 'https://www.canva.com/design/DAGdO90KaZ4/a8X2_RjPZZ92rM22PKD_dg/view?utm_content=DAGdO90KaZ4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1d4fd2db19',
     repoUrl: '#',
   },
+  {
+    id: 5,
+    title: 'Time Bestie - Time Manager App',
+    description: 'A modern, feature-rich personal time tracking application with a beautiful dark-themed UI. Track daily and weekly tasks, manage priorities, and monitor productivity with real-time timers. Built with vanilla JavaScript, HTML5, CSS3, and Tailwind CSS.',
+    image: '/8.png',
+    tags: ['JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3', 'localStorage', 'Vercel'],
+    liveUrl: 'https://time-manager-app-ten.vercel.app/',
+    repoUrl: 'https://github.com/Naledi-starr/Time-Manager-App',
+  },
  ];

@@ -68,34 +68,6 @@ const Button = styled.a`
   }
 `;
 
-const Stats = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 3rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-`;
-
-const Stat = styled.div`
-  text-align: center;
-`;
-
-const StatNumber = styled.div`
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #d4af37;
-`;
-
-const StatLabel = styled.div`
-  font-size: 1rem;
-  font-weight: 600;
-`;
-
 const SocialLinksWrapper = styled.div`
   display: flex;
   justify-content: center;
